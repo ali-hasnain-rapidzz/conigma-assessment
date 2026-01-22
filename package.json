@@ -1,0 +1,19 @@
+{
+  "name": "workflow-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Temporal-backed workflow agent system",
+  "scripts": {
+    "dev:worker": "pnpm --filter @workflow-agent/temporal-worker dev",
+    "dev:web": "pnpm --filter @workflow-agent/web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": ["temporal", "workflow", "agent", "nextjs"],
+  "author": "Ali",
+  "license": "MIT",
+  "packageManager": "pnpm@8.15.0"
+}
